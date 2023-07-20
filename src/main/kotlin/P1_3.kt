@@ -1,7 +1,7 @@
 fun main(args : Array<String>) {
     println("Enter the Details of the student:")
     print("Enter Enrollment No.: ")
-    val enrno = readLine()
+    val enrno = readln()
     print("Enter Name: ")
     val name = readln()
     print("Enter Age: ")

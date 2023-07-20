@@ -15,7 +15,7 @@ fun main(args : Array<String>) {
         11 -> print("November")
         12 -> print("December")
         else -> {
-            print("Enter correct month!")
+            print("Enter correct month Number!")
         }
     }
 }
