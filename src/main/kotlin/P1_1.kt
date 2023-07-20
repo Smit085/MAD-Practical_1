@@ -9,6 +9,13 @@ fun main(args: Array<String>) {
     val d: Short = -85
     val e: Long = 124342334
     val f: Byte = 127
-    println("Integer Type: " + enr_no)
-
+    println("Integer Type: $enr_no")
+    println("Float Type: $c")
+    println("Character Type: $a")
+    println("String Type: $name")
+    println("Boolean Type: $b")
+    println("Double Type: $weight")
+    println("Long Type: $e")
+    println("Short Value: $d")
+    println("Byte Value: $f")
 }
