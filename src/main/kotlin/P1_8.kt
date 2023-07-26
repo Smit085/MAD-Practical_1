@@ -1,7 +1,11 @@
+//8.Create different types of Array as shown in image.
+// Explore Arrays.deepToString(), contentDeepToString() methods, IntArray variable .joinToString()  and use in program to print Array.
+// Explore range, downTo, until etc. for loop and use in this program. Sort Array of Integer data type without using inbuilt function & with using inbuilt function.
 import java.util.*
+
 fun main() {
     // 1. Using 'arrayOf()' function
-    val array1 = arrayOf("Mango","Banana","Cherry","Chiku")
+    val array1 = arrayOf("Mango", "Banana", "Cherry", "Chiku")
 
     // 2. Using 'IntArray' constructor
     val array2 = IntArray(5) { i -> i + 1 }

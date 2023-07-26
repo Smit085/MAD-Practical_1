@@ -1,3 +1,4 @@
+//3.Scan student’s information and display all the data.
 fun main(args : Array<String>) {
     println("Enter the Details of the student:")
     print("Enter Enrollment No.: ")

@@ -1,3 +1,4 @@
+//5.Display month name using When
 fun main(args : Array<String>) {
     print("Enter the month number: ")
     val x = readln()

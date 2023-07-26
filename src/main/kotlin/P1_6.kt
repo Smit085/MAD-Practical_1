@@ -1,3 +1,4 @@
+//6. By using a user defined function perform all arithmetic operations.
 fun add(x: Int,y: Int): Int {
     return x+y
 }
