@@ -18,10 +18,11 @@ class Car2{
     var type = ""
     var name = ""
     var model = ""
-    var price = ""
+    var origprice = ""
+    var currprice = ""
     var owner = ""
     var milesDrive = ""
-    init{
+    fun getCarInformation(){
         println("\nEnter the details of car-2")
         print("Enter vehicle type: ")
         type = readln()
@@ -31,16 +32,26 @@ class Car2{
         model = readln()
         print("Enter owner name: ")
         owner = readln()
-        print("Enter price: ")
-        price = readln()
         print("Enter mileDrove: ")
         milesDrive = readln()
+
+        getCarPrice()
+    }
+    fun getCarPrice(){
+        print("Enter original car price: ")
+        origprice = readln()
+        print("Enter current car price: ")
+        currprice = readln()
+    }
+    init{
+        getCarInformation()
     }
     fun displayCarInfo(){
         println("\n------Car-2 Information------")
         println("Type: $type")
         println("Name: $name")
         println("Model: $model")
+        println("Current Price: $currprice")
         println("Owner name: $owner")
         println("Miles drove: $milesDrive")
     }
@@ -53,7 +64,7 @@ class Car3{
     var price = ""
     var owner = ""
     var milesDrive = ""
-    constructor (type: String,name: String,model: String,price: String,owner: String,milesDrive: String){
+    constructor (type: String,name: String,model: String,price: String,owner: String,milesDrive: String) {
         this.type = type
         this.name = name
         this.model = model
@@ -61,15 +72,13 @@ class Car3{
         this.owner = owner
         this.milesDrive = milesDrive
     }
-    fun getCarPrice(){
-        println("Price: $price")
-    }
     fun displayCarInfo(){
         println("\n------Car-3 Information------")
         println("Type: $type")
         println("Name: $name")
         println("Model: $model")
         println("Owner name: $owner")
+        println("Price: $price")
         println("Miles drove: $milesDrive")
     }
 }
