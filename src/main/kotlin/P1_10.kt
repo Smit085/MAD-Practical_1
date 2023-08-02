@@ -2,8 +2,15 @@
 // Create an object of Car class and access property of it. (getCarInformation(), getOriginalCarPrice(), getCurrentCarPrice(), displayCarInfo() etc.)
 
 //10.1 Creating class using primary constructor
-class Car1 (var type: String, var name: String, var model: String, var price: String, var owner: String, var milesDrive: String){
-    fun displayCarInfo(){
+class Car1(
+    var type: String,
+    var name: String,
+    var model: String,
+    var price: String,
+    var owner: String,
+    var milesDrive: String
+) {
+    fun displayCarInfo() {
         println("\n------Car-1 Information------")
         println("Type: $type")
         println("Name: $name")
@@ -14,7 +21,7 @@ class Car1 (var type: String, var name: String, var model: String, var price: St
 }
 
 //10.2 Creating class using primary constructor with 'init' block
-class Car2{
+class Car2 {
     var type = ""
     var name = ""
     var model = ""
@@ -22,7 +29,7 @@ class Car2{
     var currprice = ""
     var owner = ""
     var milesDrive = ""
-    fun getCarInformation(){
+    fun getCarInformation() {
         println("\nEnter the details of car-2")
         print("Enter vehicle type: ")
         type = readln()
@@ -37,16 +44,19 @@ class Car2{
 
         getCarPrice()
     }
-    fun getCarPrice(){
+
+    fun getCarPrice() {
         print("Enter original car price: ")
         origprice = readln()
         print("Enter current car price: ")
         currprice = readln()
     }
-    init{
+
+    init {
         getCarInformation()
     }
-    fun displayCarInfo(){
+
+    fun displayCarInfo() {
         println("\n------Car-2 Information------")
         println("Type: $type")
         println("Name: $name")
@@ -56,15 +66,17 @@ class Car2{
         println("Miles drove: $milesDrive")
     }
 }
+
 //10.3 Creating class using secondary constructor using 'constructor' keyword
-class Car3{
+class Car3 {
     var type = ""
     var name = ""
     var model = ""
     var price = ""
     var owner = ""
     var milesDrive = ""
-    constructor (type: String,name: String,model: String,price: String,owner: String,milesDrive: String) {
+
+    constructor (type: String, name: String, model: String, price: String, owner: String, milesDrive: String) {
         this.type = type
         this.name = name
         this.model = model
@@ -72,7 +84,8 @@ class Car3{
         this.owner = owner
         this.milesDrive = milesDrive
     }
-    fun displayCarInfo(){
+
+    fun displayCarInfo() {
         println("\n------Car-3 Information------")
         println("Type: $type")
         println("Name: $name")
@@ -82,13 +95,14 @@ class Car3{
         println("Miles drove: $milesDrive")
     }
 }
+
 fun main(args: Array<String>) {
-    var c1 = Car1("Petrol","Kia","Hybrid","1200000","Smit","12000")
+    var c1 = Car1("Petrol", "Kia", "Hybrid", "1200000", "Smit", "12000")
     c1.displayCarInfo()
 
     var c2 = Car2()
     c2.displayCarInfo()
 
-    var c3 = Car3("Petrol","Alcazar","XUV","2300000","Rakesh","12000")
+    var c3 = Car3("Petrol", "Alcazar", "XUV", "2300000", "Rakesh", "12000")
     c3.displayCarInfo()
 }
