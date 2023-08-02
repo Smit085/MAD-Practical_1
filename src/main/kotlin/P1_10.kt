@@ -83,12 +83,12 @@ class Car3{
     }
 }
 fun main(args: Array<String>) {
-    var c1 = Car1("4-Wheeler","Kia","Hybrid","1200000","Smit","12000")
+    var c1 = Car1("Petrol","Kia","Hybrid","1200000","Smit","12000")
     c1.displayCarInfo()
 
     var c2 = Car2()
     c2.displayCarInfo()
 
-    var c3 = Car3("4-Wheeler","Alcazar","XUV","2300000","Rakesh","12000")
+    var c3 = Car3("Petrol","Alcazar","XUV","2300000","Rakesh","12000")
     c3.displayCarInfo()
 }
