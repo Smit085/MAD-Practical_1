@@ -2,7 +2,6 @@
 // Explore Arrays.deepToString(), contentDeepToString() methods, IntArray variable .joinToString()  and use in program to print Array.
 // Explore range, downTo, until etc. for loop and use in this program. Sort Array of Integer data type without using inbuilt function & with using inbuilt function.
 import java.util.*
-
 fun main() {
     // 1. Using 'arrayOf()' function
     val array1 = arrayOf("Mango", "Banana", "Cherry", "Chiku")

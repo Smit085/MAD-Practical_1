@@ -3,7 +3,7 @@
 fun main(args: Array<String>) {
     println("Types of Data Types in Kotlin:")
     val enr_no = 5
-    val weight = 57.556
+    val weight = 57.557
     val a = 'A'
     val b = true
     val name = "Smit"
